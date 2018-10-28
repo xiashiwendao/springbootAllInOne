@@ -1,0 +1,6 @@
+1. 使用了@Autowire以及@Service等注解方式实现了Autoconfig
+2. 实现了基于spring的测试；自动配置之类以及autwired触发都已经配置完成；主要是注解
+3. 关于跳过url，注意需要将依赖中的JAP部分注释掉，另外在main函数所在类上面添加上EnableAutoconfig中exclude
+4. springboot默认是扫描当前package以及子package，如果想要在其他范围内搜索，需要在main函数所在类添加@ComponentScan主机
+5. @Autowired对于接口的实例获取，会自动寻找实现类，所以接口不需要添加注解
+
