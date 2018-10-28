@@ -1,4 +1,4 @@
-package com.example.demo.mock;
+package com.example.demo.autoconfigandMock;
 
 public interface IBizCaculator {
 

@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.example.demo.mock.CaculateService;
+import com.example.demo.autoconfigandMock.CaculateService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=CaculateService.class)

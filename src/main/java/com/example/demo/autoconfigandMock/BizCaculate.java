@@ -1,4 +1,4 @@
-package com.example.demo.mock;
+package com.example.demo.autoconfigandMock;
 
 import org.springframework.stereotype.Service;
 

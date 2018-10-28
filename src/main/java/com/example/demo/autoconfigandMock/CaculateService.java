@@ -1,4 +1,4 @@
-package com.example.demo.mock;
+package com.example.demo.autoconfigandMock;
 
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
