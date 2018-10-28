@@ -16,7 +16,6 @@ import com.example.demo.mock.CaculateService;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=CaculateService.class)
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
-
 public class DemoApplicationTests {
 
 	@Autowired
