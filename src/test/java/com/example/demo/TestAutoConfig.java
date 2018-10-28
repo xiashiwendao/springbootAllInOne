@@ -12,14 +12,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.example.demo.autoconfigandMock.CaculateService;
+import com.example.demo.autoconfigandMock.ICaculateService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=CaculateService.class)
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
-public class DemoApplicationTests {
+public class TestAutoConfig {
 
 	@Autowired
-	private CaculateService service;
+	private ICaculateService service;
 
 	@Test
 	public void contextLoads() {

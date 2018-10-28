@@ -13,21 +13,23 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = {"com.example.demo"})
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @SpringBootApplication
-public class CaculateService {
+public class CaculateService implements ICaculateService {
 	@Autowired
 	private IBizCaculator caculator;
 
+	@Override
 	public int add(int a, int b) {
 		return this.caculator.add(a, b);
 	}
 
+	@Override
 	public String getInfo(String pClass) {
 		return this.caculator.getInfo(pClass);
 	}
 	
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(CaculateService.class);
-		CaculateService p = applicationContext.getBean(CaculateService.class);
+		ICaculateService p = applicationContext.getBean(CaculateService.class);
 		System.out.println(p.add(5, 8));
 	}
 }
